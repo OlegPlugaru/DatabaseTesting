@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DDBE2ECE2B91196100877F78 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBE2ECD2B91196100877F78 /* LoginView.swift */; };
+		DDBE2ED22B911A5B00877F78 /* InputTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBE2ED12B911A5B00877F78 /* InputTextFieldView.swift */; };
+		DDBE2ED52B911D8200877F78 /* PreviewLayoutComponentModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBE2ED42B911D8200877F78 /* PreviewLayoutComponentModifier.swift */; };
 		DDD1EBD22B8FBBB700C51920 /* DatabaseTestingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD1EBD12B8FBBB700C51920 /* DatabaseTestingApp.swift */; };
-		DDD1EBD42B8FBBB700C51920 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD1EBD32B8FBBB700C51920 /* ContentView.swift */; };
 		DDD1EBD62B8FBBB900C51920 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDD1EBD52B8FBBB900C51920 /* Assets.xcassets */; };
 		DDD1EBD92B8FBBB900C51920 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDD1EBD82B8FBBB900C51920 /* Preview Assets.xcassets */; };
 		DDD1EBE12B8FBD7000C51920 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = DDD1EBE02B8FBD7000C51920 /* FirebaseAnalytics */; };
@@ -42,9 +44,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DDBE2ECD2B91196100877F78 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		DDBE2ED12B911A5B00877F78 /* InputTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextFieldView.swift; sourceTree = "<group>"; };
+		DDBE2ED42B911D8200877F78 /* PreviewLayoutComponentModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewLayoutComponentModifier.swift; sourceTree = "<group>"; };
 		DDD1EBCE2B8FBBB700C51920 /* DatabaseTesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DatabaseTesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDD1EBD12B8FBBB700C51920 /* DatabaseTestingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseTestingApp.swift; sourceTree = "<group>"; };
-		DDD1EBD32B8FBBB700C51920 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DDD1EBD52B8FBBB900C51920 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDD1EBD82B8FBBB900C51920 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DDD1EC162B8FBFFF00C51920 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -88,6 +92,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DDBE2ECA2B91193400877F78 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				DDBE2ECB2B91194B00877F78 /* Login */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		DDBE2ECB2B91194B00877F78 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				DDBE2ECC2B91195000877F78 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		DDBE2ECC2B91195000877F78 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DDBE2ECD2B91196100877F78 /* LoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DDBE2ECF2B911A2C00877F78 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				DDBE2ED32B911D5E00877F78 /* Modifier */,
+				DDBE2ED02B911A3E00877F78 /* Views */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		DDBE2ED02B911A3E00877F78 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DDBE2ED12B911A5B00877F78 /* InputTextFieldView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DDBE2ED32B911D5E00877F78 /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				DDBE2ED42B911D8200877F78 /* PreviewLayoutComponentModifier.swift */,
+			);
+			path = Modifier;
+			sourceTree = "<group>";
+		};
 		DDD1EBC52B8FBBB700C51920 = {
 			isa = PBXGroup;
 			children = (
@@ -107,9 +160,10 @@
 		DDD1EBD02B8FBBB700C51920 /* DatabaseTesting */ = {
 			isa = PBXGroup;
 			children = (
+				DDBE2ECF2B911A2C00877F78 /* Base */,
+				DDBE2ECA2B91193400877F78 /* Feature */,
 				DDD1EC162B8FBFFF00C51920 /* GoogleService-Info.plist */,
 				DDD1EBD12B8FBBB700C51920 /* DatabaseTestingApp.swift */,
-				DDD1EBD32B8FBBB700C51920 /* ContentView.swift */,
 				DDD1EBD52B8FBBB900C51920 /* Assets.xcassets */,
 				DDD1EBD72B8FBBB900C51920 /* Preview Content */,
 			);
@@ -254,8 +308,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDD1EBD42B8FBBB700C51920 /* ContentView.swift in Sources */,
+				DDBE2ECE2B91196100877F78 /* LoginView.swift in Sources */,
+				DDBE2ED52B911D8200877F78 /* PreviewLayoutComponentModifier.swift in Sources */,
 				DDD1EBD22B8FBBB700C51920 /* DatabaseTestingApp.swift in Sources */,
+				DDBE2ED22B911A5B00877F78 /* InputTextFieldView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
