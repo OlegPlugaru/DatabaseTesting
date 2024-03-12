@@ -1,27 +1,27 @@
 //
-//  InputTextFieldView.swift
+//  InputPasswordView.swift
 //  DatabaseTesting
 //
-//  Created by Oleg Plugaru on 29.02.2024.
+//  Created by Oleg Plugaru on 12.03.2024.
 //
 
 import SwiftUI
 
-struct InputTextFieldView: View {
+struct InputPasswordView: View {
     
-    @Binding var text: String
+    @Binding var password: String
     let placeholder: String
-    let keyboardType: UIKeyboardType
     let sfSymbol: String?
     
     private let textFieldLeading: CGFloat = 30
     
     var body: some View {
         
-        TextField(placeholder, text: $text)
-            .frame(maxWidth: .infinity, minHeight: 44)
+       
+        SecureField(placeholder, text: $password)
+            .frame(maxWidth: .infinity,
+                   minHeight: 44)
             .padding(.leading, sfSymbol == nil ? textFieldLeading / 2 : textFieldLeading)
-            .keyboardType(keyboardType)
             .background(
                 
                 ZStack(alignment: .leading) {
@@ -36,24 +36,22 @@ struct InputTextFieldView: View {
                     
                     RoundedRectangle(cornerRadius: 10, style: .continuous)
                         .stroke(Color.gray.opacity(0.25))
+                    
                 }
             )
     }
 }
 
-#Preview {
-    Group {
-        InputTextFieldView(text: .constant(""),
-                           placeholder: "Email",
-                           keyboardType: .emailAddress,
-                           sfSymbol: "envelope")
-        .preview(with: "Email Text input with sfSymbol")
-        
-        InputTextFieldView(text: .constant(""),
-                           placeholder: "First Name",
-                           keyboardType: .default,
-                           sfSymbol: nil)
-        .preview(with: "First Name Text input with sfSymbol")
-       
+struct InputPasswordView_Previews: PreviewProvider {
+    static var previews: some View {
+        Group {
+            InputPasswordView(password: .constant(""),
+                              placeholder: "Password",
+                              sfSymbol: "lock")
+            .preview(with: "Input Password View with sfSymbol")
+            
+            InputPasswordView(password: .constant(""), placeholder: "Password", sfSymbol: nil)
+                .preview(with: "Input Password View without sfSymbol")
+        }
     }
 }

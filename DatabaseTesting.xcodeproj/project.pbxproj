@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD9F31F62BA0E64800D8F213 /* InputPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9F31F52BA0E64800D8F213 /* InputPasswordView.swift */; };
+		DD9F31F82BA0E8D100D8F213 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9F31F72BA0E8D100D8F213 /* ButtonView.swift */; };
 		DDBE2ECE2B91196100877F78 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBE2ECD2B91196100877F78 /* LoginView.swift */; };
 		DDBE2ED22B911A5B00877F78 /* InputTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBE2ED12B911A5B00877F78 /* InputTextFieldView.swift */; };
 		DDBE2ED52B911D8200877F78 /* PreviewLayoutComponentModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBE2ED42B911D8200877F78 /* PreviewLayoutComponentModifier.swift */; };
@@ -44,6 +46,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD9F31F52BA0E64800D8F213 /* InputPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputPasswordView.swift; sourceTree = "<group>"; };
+		DD9F31F72BA0E8D100D8F213 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		DDBE2ECD2B91196100877F78 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		DDBE2ED12B911A5B00877F78 /* InputTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextFieldView.swift; sourceTree = "<group>"; };
 		DDBE2ED42B911D8200877F78 /* PreviewLayoutComponentModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewLayoutComponentModifier.swift; sourceTree = "<group>"; };
@@ -129,6 +133,8 @@
 			isa = PBXGroup;
 			children = (
 				DDBE2ED12B911A5B00877F78 /* InputTextFieldView.swift */,
+				DD9F31F52BA0E64800D8F213 /* InputPasswordView.swift */,
+				DD9F31F72BA0E8D100D8F213 /* ButtonView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -308,9 +314,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD9F31F62BA0E64800D8F213 /* InputPasswordView.swift in Sources */,
 				DDBE2ECE2B91196100877F78 /* LoginView.swift in Sources */,
 				DDBE2ED52B911D8200877F78 /* PreviewLayoutComponentModifier.swift in Sources */,
 				DDD1EBD22B8FBBB700C51920 /* DatabaseTestingApp.swift in Sources */,
+				DD9F31F82BA0E8D100D8F213 /* ButtonView.swift in Sources */,
 				DDBE2ED22B911A5B00877F78 /* InputTextFieldView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
