@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD8685882BA2279100ABA9ED /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8685872BA2279100ABA9ED /* RegisterView.swift */; };
+		DD86858A2BA228D900ABA9ED /* CloseModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8685892BA228D900ABA9ED /* CloseModifier.swift */; };
+		DD86858E2BA22B4600ABA9ED /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD86858D2BA22B4600ABA9ED /* HomeView.swift */; };
+		DD8685922BA22C9300ABA9ED /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8685912BA22C9300ABA9ED /* ForgotPasswordView.swift */; };
+		DD8685952BA22FED00ABA9ED /* RegistrationDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8685942BA22FED00ABA9ED /* RegistrationDetails.swift */; };
+		DD8685982BA2305100ABA9ED /* RegistrationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8685972BA2305100ABA9ED /* RegistrationService.swift */; };
+		DD86859B2BA2344700ABA9ED /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD86859A2BA2344700ABA9ED /* RegistrationViewModel.swift */; };
+		DD86859F2BA238B000ABA9ED /* SessionUserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD86859E2BA238B000ABA9ED /* SessionUserDetails.swift */; };
+		DD8685A22BA2391500ABA9ED /* SessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8685A12BA2391500ABA9ED /* SessionService.swift */; };
 		DD9F31F62BA0E64800D8F213 /* InputPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9F31F52BA0E64800D8F213 /* InputPasswordView.swift */; };
 		DD9F31F82BA0E8D100D8F213 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9F31F72BA0E8D100D8F213 /* ButtonView.swift */; };
 		DDBE2ECE2B91196100877F78 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBE2ECD2B91196100877F78 /* LoginView.swift */; };
@@ -46,6 +55,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD8685872BA2279100ABA9ED /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		DD8685892BA228D900ABA9ED /* CloseModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseModifier.swift; sourceTree = "<group>"; };
+		DD86858D2BA22B4600ABA9ED /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		DD8685912BA22C9300ABA9ED /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		DD8685942BA22FED00ABA9ED /* RegistrationDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationDetails.swift; sourceTree = "<group>"; };
+		DD8685972BA2305100ABA9ED /* RegistrationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationService.swift; sourceTree = "<group>"; };
+		DD86859A2BA2344700ABA9ED /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		DD86859E2BA238B000ABA9ED /* SessionUserDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionUserDetails.swift; sourceTree = "<group>"; };
+		DD8685A12BA2391500ABA9ED /* SessionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionService.swift; sourceTree = "<group>"; };
 		DD9F31F52BA0E64800D8F213 /* InputPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputPasswordView.swift; sourceTree = "<group>"; };
 		DD9F31F72BA0E8D100D8F213 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		DDBE2ECD2B91196100877F78 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -96,9 +114,113 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD8685852BA2277C00ABA9ED /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				DD8685992BA2341300ABA9ED /* ViewModel */,
+				DD8685962BA2304100ABA9ED /* Service */,
+				DD8685932BA22FCA00ABA9ED /* Model */,
+				DD8685862BA2278300ABA9ED /* View */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		DD8685862BA2278300ABA9ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DD8685872BA2279100ABA9ED /* RegisterView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DD86858B2BA22B2F00ABA9ED /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DD86858C2BA22B3E00ABA9ED /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		DD86858C2BA22B3E00ABA9ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DD86858D2BA22B4600ABA9ED /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DD86858F2BA22C7700ABA9ED /* Forgot Password */ = {
+			isa = PBXGroup;
+			children = (
+				DD8685902BA22C8600ABA9ED /* View */,
+			);
+			path = "Forgot Password";
+			sourceTree = "<group>";
+		};
+		DD8685902BA22C8600ABA9ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DD8685912BA22C9300ABA9ED /* ForgotPasswordView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DD8685932BA22FCA00ABA9ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DD8685942BA22FED00ABA9ED /* RegistrationDetails.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DD8685962BA2304100ABA9ED /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				DD8685972BA2305100ABA9ED /* RegistrationService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		DD8685992BA2341300ABA9ED /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DD86859A2BA2344700ABA9ED /* RegistrationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DD86859C2BA2388900ABA9ED /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				DD8685A02BA238FF00ABA9ED /* Service */,
+				DD86859D2BA2389000ABA9ED /* Model */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		DD86859D2BA2389000ABA9ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DD86859E2BA238B000ABA9ED /* SessionUserDetails.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DD8685A02BA238FF00ABA9ED /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				DD8685A12BA2391500ABA9ED /* SessionService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		DDBE2ECA2B91193400877F78 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				DD86859C2BA2388900ABA9ED /* Session */,
+				DD86858F2BA22C7700ABA9ED /* Forgot Password */,
+				DD86858B2BA22B2F00ABA9ED /* Home */,
+				DD8685852BA2277C00ABA9ED /* Register */,
 				DDBE2ECB2B91194B00877F78 /* Login */,
 			);
 			path = Feature;
@@ -143,6 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				DDBE2ED42B911D8200877F78 /* PreviewLayoutComponentModifier.swift */,
+				DD8685892BA228D900ABA9ED /* CloseModifier.swift */,
 			);
 			path = Modifier;
 			sourceTree = "<group>";
@@ -314,11 +437,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD86858E2BA22B4600ABA9ED /* HomeView.swift in Sources */,
 				DD9F31F62BA0E64800D8F213 /* InputPasswordView.swift in Sources */,
 				DDBE2ECE2B91196100877F78 /* LoginView.swift in Sources */,
 				DDBE2ED52B911D8200877F78 /* PreviewLayoutComponentModifier.swift in Sources */,
+				DD8685982BA2305100ABA9ED /* RegistrationService.swift in Sources */,
+				DD86858A2BA228D900ABA9ED /* CloseModifier.swift in Sources */,
+				DD8685A22BA2391500ABA9ED /* SessionService.swift in Sources */,
+				DD8685882BA2279100ABA9ED /* RegisterView.swift in Sources */,
 				DDD1EBD22B8FBBB700C51920 /* DatabaseTestingApp.swift in Sources */,
 				DD9F31F82BA0E8D100D8F213 /* ButtonView.swift in Sources */,
+				DD86859B2BA2344700ABA9ED /* RegistrationViewModel.swift in Sources */,
+				DD8685952BA22FED00ABA9ED /* RegistrationDetails.swift in Sources */,
+				DD8685922BA22C9300ABA9ED /* ForgotPasswordView.swift in Sources */,
+				DD86859F2BA238B000ABA9ED /* SessionUserDetails.swift in Sources */,
 				DDBE2ED22B911A5B00877F78 /* InputTextFieldView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
